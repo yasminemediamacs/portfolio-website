@@ -14,15 +14,6 @@ html {
   height: 100%;
 }
 
-.hero {
-  background-image: linear-gradient(hsla(0, 0%, 0%, 0.2), black),
-    url("/images/background.jpeg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 h1,
 h2,
 h3,
@@ -35,18 +26,51 @@ h6 {
 }
 
 h1 {
-  font-size: 98px;
-  color: white;
+  color: black;
+  font-size: 68px;
+  font-family: var(--heading-font-family);
+  font-weight: 400;
+  margin-top: 150px;
+}
+
+h2 {
+  font-family: var(--default-font-family);
+  font-weight: 200;
+  line-height: 2;
+  font-size: 28px;
+}
+
+h3 {
+  color: black;
+  font-size: 32px;
+  font-family: var(--heading-font-family);
+  font-weight: 400;
 }
 
 p {
   font-family: var(--default-font-family);
-  font-weight: normal;
+  font-weight: 300;
+  margin: 20px 0;
+  font-size: 20px;
 }
 
+/* ----------- CSS Home ----------- */
+
 .hero {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.2), black),
+    url("/images/background.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: left;
   padding: 120px;
+}
+
+.heading-home {
+  font-size: 98px;
+  margin: 0;
+  color: white;
 }
 
 .hero p {
@@ -94,6 +118,8 @@ span {
   background-color: transparent !important;
 }
 
+/* ----------- CSS General ----------- */
+
 .navbar-nav {
   padding: 5px;
 }
@@ -110,6 +136,53 @@ span {
   font-weight: 200;
   font-size: 24px;
   padding-left: 20px;
+}
+
+.about,
+.contact {
+  background-color: red;
+}
+
+.footer {
+  text-align: right;
+}
+
+/* ----------- CSS Work ----------- */
+
+i {
+  margin: 0 8px;
+}
+
+img {
+  width: 600px;
+}
+
+.container {
+  padding-bottom: 80px;
+}
+
+.general {
+  margin-top: 80px;
+}
+
+.btn-light {
+  font-family: var(--default-font-family);
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.call-out {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.call-out a {
+  font-family: var(--default-font-family);
+  font-weight: 300;
+  margin: 20px 0;
+  font-size: 20px;
+  color: grey;
+  text-decoration: none;
 }
 
 /* Media queries Huge, Desktop, Tablet, Mobile and Small devices */
