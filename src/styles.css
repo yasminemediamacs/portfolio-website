@@ -234,7 +234,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-  h1 {
+  .heading-home {
     font-size: 42px;
   }
 
