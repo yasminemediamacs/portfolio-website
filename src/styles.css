@@ -190,6 +190,10 @@ img {
   text-align: center;
 }
 
+.hello {
+  text-align: left;
+}
+
 footer {
   padding-bottom: 10px;
 }
