@@ -45,6 +45,7 @@ h3 {
   font-size: 32px;
   font-family: var(--heading-font-family);
   font-weight: 400;
+  margin-top: 3rem;
 }
 
 p {
@@ -252,5 +253,51 @@ footer {
 
   .quote {
     display: none;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p,
+  h3 {
+    text-align: center;
+    padding: 0;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .btn {
+    display: block;
+    margin: 50px auto 50px auto;
+  }
+
+  .container {
+    padding: 0 25px;
+  }
+
+  .general {
+    margin: none;
+  }
+
+  .call-out {
+    margin: 20px 0;
+    font-size: 24px;
+  }
+
+  .copyright {
+    font-size: 10px;
+    margin: 20px 0 0 0;
   }
 }
