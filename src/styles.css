@@ -185,6 +185,14 @@ img {
   text-decoration: none;
 }
 
+.copyright {
+  text-align: center;
+}
+
+footer {
+  padding-bottom: 10px;
+}
+
 /* Media queries Huge, Desktop, Tablet, Mobile and Small devices */
 
 @media (max-width: 1280px) {
