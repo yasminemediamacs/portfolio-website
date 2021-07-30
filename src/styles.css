@@ -139,11 +139,6 @@ span {
   padding-left: 20px;
 }
 
-.about,
-.contact {
-  background-color: red;
-}
-
 .footer {
   text-align: right;
 }
@@ -242,16 +237,11 @@ footer {
   }
 
   .call-out h3 {
-    margin-bottom: 15px;
+    margin: 50px 0 15px 0;
   }
 
   .call-out a {
     font-size: 18px;
-  }
-
-  .btn {
-    display: block;
-    margin: 50px auto 50px auto;
   }
 
   .container {
