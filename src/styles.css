@@ -133,6 +133,10 @@ footer {
   padding-bottom: 10px;
 }
 
+img {
+  border-radius: 6px;
+}
+
 .container {
   padding-bottom: 80px;
 }
