@@ -52,6 +52,35 @@ p {
   font-family: var(--default-font-family);
   font-weight: 300;
   font-size: 20px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----------- CSS Navbar ----------- */
+
+.navbar-nav {
+  padding: 5px;
+}
+
+.nav-item {
+  font-family: var(--default-font-family);
+  font-weight: 200;
+  font-size: 24px;
+  padding-right: 20px;
+}
+
+.navbar-brand {
+  font-family: var(--default-font-family);
+  font-weight: 200;
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+.bg-dark {
+  background-color: transparent !important;
 }
 
 /* ----------- CSS Home ----------- */
@@ -92,30 +121,6 @@ p {
 .content {
   position: absolute;
   bottom: 20px;
-}
-
-/* ----------- CSS Navbar ----------- */
-
-.navbar-nav {
-  padding: 5px;
-}
-
-.nav-item {
-  font-family: var(--default-font-family);
-  font-weight: 200;
-  font-size: 24px;
-  padding-right: 20px;
-}
-
-.navbar-brand {
-  font-family: var(--default-font-family);
-  font-weight: 200;
-  font-size: 24px;
-  padding-left: 20px;
-}
-
-.bg-dark {
-  background-color: transparent !important;
 }
 
 /* ----------- CSS Work ----------- */
@@ -163,6 +168,51 @@ footer {
 .project-description {
   padding: 40px 40px;
 }
+
+/* ----------- CSS About ----------- */
+ul {
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+li {
+  display: inline;
+}
+
+li img {
+  width: 45px;
+  padding-right: 10px;
+}
+
+.about-description {
+  padding: 20px 40px;
+}
+
+.button-about {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.call-out-about {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.call-out-about a {
+  font-family: var(--default-font-family);
+  font-weight: 300;
+  margin: 20px 0;
+  font-size: 20px;
+  color: grey;
+  text-decoration: none;
+}
+
+.copyright-about {
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* ----------- CSS Contact ----------- */
 
 /* Media queries Huge, Desktop, Tablet, Mobile and Small devices */
 
@@ -232,6 +282,62 @@ footer {
 
   .copyright {
     font-size: 14px;
+    margin: 20px 0 0 0;
+  }
+
+  /* Media queries About */
+  h2 {
+    line-height: 1.4;
+  }
+
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+
+  .col-6 img {
+    padding: 0 20px;
+  }
+
+  .about-description {
+    padding: 40px 20px;
+  }
+
+  .about-description p,
+  .about-description h3 {
+    text-align: start;
+  }
+
+  .technologies img {
+    width: 10%;
+    display: inline;
+    padding: 0 10px 20px 0;
+  }
+
+  .button-about {
+    margin: 10px;
+    text-align: start;
+  }
+
+  .call-out-about {
+    margin: 20px 0;
+    font-size: 24px;
+  }
+
+  .call-out-about h3 {
+    margin-bottom: 15px;
+    padding: 0 20px;
+  }
+
+  .call-out-about a {
+    font-size: 18px;
+  }
+
+  .copyright-about {
+    font-size: 12px;
     margin: 20px 0 0 0;
   }
 }
@@ -313,6 +419,55 @@ footer {
   }
 
   .copyright {
+    font-size: 12px;
+    margin: 20px 0 0 0;
+  }
+
+  /* Media queries About */
+
+  h2 {
+    line-height: 1.4;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+
+  .about-description {
+    padding: 40px 20px;
+  }
+
+  .about-description p,
+  .about-description h3 {
+    text-align: start;
+  }
+
+  .technologies img {
+    width: 15%;
+    display: inline;
+    padding: 0 10px 20px 0;
+  }
+
+  .button-about {
+    margin: 10px 0;
+    text-align: start;
+  }
+
+  .call-out-about {
+    margin: 20px 0;
+    font-size: 24px;
+  }
+
+  .call-out-about h3 {
+    margin-bottom: 15px;
+    padding: 0 20px;
+  }
+
+  .call-out-about a {
+    font-size: 18px;
+  }
+
+  .copyright-about {
     font-size: 12px;
     margin: 20px 0 0 0;
   }
