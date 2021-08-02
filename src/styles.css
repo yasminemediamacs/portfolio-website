@@ -57,6 +57,11 @@ p {
 
 a {
   text-decoration: none;
+  font-family: var(--default-font-family);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  color: black;
 }
 
 /* ----------- CSS Navbar ----------- */
@@ -248,23 +253,25 @@ form {
 
 .socials {
   font-size: 38px;
-  margin: 20px 40px 20px 20px;
+  margin: 20px;
+  position: relative;
+  top: 10px;
 }
 
-.fa-linkedin {
-  color: #0077b5;
+.contact-socials {
+  display: block;
 }
 
-.fa-facebook-f {
-  color: #3b5998;
-}
-
-.fa-facebook-messenger {
-  color: #00b2ff;
-}
-
-.fa-instagram {
-  color: #c13584;
+.quote {
+  font-family: var(--default-font-family);
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 84px;
+  opacity: 0.4;
+  position: absolute;
+  right: 50px;
+  bottom: 150px;
+  color: #c4dbd4;
 }
 
 /* Media queries Huge, Desktop, Tablet, Mobile and Small devices */
