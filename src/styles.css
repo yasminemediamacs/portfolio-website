@@ -9,11 +9,6 @@ body {
   font-family: var(--default-font-family);
 }
 
-body,
-html {
-  height: 100%;
-}
-
 h1,
 h2,
 h3,
