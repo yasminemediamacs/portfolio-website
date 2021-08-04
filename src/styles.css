@@ -215,6 +215,10 @@ li img {
   padding: 20px 40px;
 }
 
+#technology-icons {
+  text-align: left;
+}
+
 .button-about {
   margin-bottom: 20px;
   display: block;
