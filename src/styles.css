@@ -86,6 +86,10 @@ ul {
   background-color: transparent !important;
 }
 
+#container-nav {
+  padding: 0;
+}
+
 /* ----------- CSS Home ----------- */
 .quote-home {
   font-family: var(--default-font-family);
