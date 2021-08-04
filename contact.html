@@ -28,6 +28,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body class="contact">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -66,43 +67,78 @@
       </div>
     </nav>
     <div class="container">
-      <h1>Let's get in touch!</h1>
-      <h2>Let's make something creative together!</h2>
-
+      <div class="heading">
+        <h1>Let's get in touch!</h1>
+        <h2>Let's make something creative together!</h2>
+      </div>
       <div class="row">
         <div class="col-6">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Name</label>
-              <input type="text" class="form-control" />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
-                >Phone</label
+          <form
+            id="fs-frm"
+            name="complaint-form"
+            accept-charset="utf-8"
+            action="https://formspree.io/f/mnqlgggr"
+            method="post"
+          >
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name" class="form-label">Full Name</label>
+              <input
+                type="text"
+                name="name"
+                id="full-name"
+                required=""
+                class="form-control mb-3"
+              />
+              <label for="email-address" class="form-label"
+                >Email Address</label
               >
-              <input type="text" class="form-control" />
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Email</label>
               <input
                 type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
+                name="_replyto"
+                id="email-address"
+                required=""
+                class="form-control mb-3"
               />
-            </div>
-            <div class="mb-3">
-              <label for="floatingTextarea2" class="form-label">Message</label>
-              <textarea class="form-control" style="height: 100px"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-light button-contact">
-              Submit
-            </button>
+              <label for="telephone" class="form-label"
+                >Telephone Number (Optional)</label
+              >
+              <input
+                type="telephone"
+                name="telephone"
+                id="telephone"
+                class="form-control mb-3"
+              />
+              <label for="complaint" class="form-label">Message</label>
+              <textarea
+                rows="6"
+                name="message"
+                id="complaint"
+                required=""
+                class="form-control mb-3"
+              ></textarea>
+              <input
+                type="hidden"
+                name="_subject"
+                id="email-subject"
+                value="Contact Form SheCodes"
+                class="form-control mb-3"
+              />
+            </fieldset>
+            <div
+              class="g-recaptcha"
+              data-sitekey="6LcbXNsbAAAAAEAg4-zZah6syqdYozR6s5kP8fE3"
+            ></div>
+            <br />
+            <input
+              type="submit"
+              value="Submit"
+              class="btn btn-light"
+              id="button-contact"
+            />
           </form>
         </div>
         <div class="col-6 mt-4">
-          <ul class="text-center">
+          <ul>
             <li class="contact-socials">
               <a href="mailto:yasminesenter6@gmail.com"
                 ><i class="fas fa-paper-plane socials"></i>
@@ -134,7 +170,9 @@
           </ul>
         </div>
       </div>
-      <h4 class="quote">"DESIGN IS THINKING <br />MADE VISUAL"</h4>
+      <h4 class="quote d-none d-lg-block">
+        "DESIGN IS THINKING <br />MADE VISUAL"
+      </h4>
     </div>
   </body>
 </html>

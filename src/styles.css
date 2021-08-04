@@ -64,6 +64,9 @@ a {
   color: black;
 }
 
+ul {
+  text-align: center;
+}
 /* ----------- CSS Navbar ----------- */
 
 .navbar-nav {
@@ -239,6 +242,11 @@ form {
   line-height: 1.5;
 }
 
+.contact-form {
+  display: block;
+  padding-bottom: 20px;
+}
+
 .form-control {
   background-color: #f2f2f2;
   border-radius: revert;
@@ -400,6 +408,37 @@ form {
     font-size: 12px;
     margin: 20px 0 0 0;
   }
+
+  /* Media queries Contact */
+
+  a {
+    font-size: 20px;
+  }
+
+  .col-6 {
+    padding: 0 20px;
+  }
+
+  #button-contact {
+    width: 150px;
+    background-color: #f2f2f2;
+    margin: 0 0 50px 0;
+  }
+
+  .socials {
+    font-size: 32px;
+    margin: 20px;
+    position: relative;
+    top: 5px;
+  }
+
+  .contact-socials {
+    display: block;
+  }
+
+  .container {
+    padding-bottom: 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -530,5 +569,56 @@ form {
   .copyright-about {
     font-size: 12px;
     margin: 20px 0 0 0;
+  }
+
+  /* Media queries Contact */
+
+  a {
+    font-size: 15px;
+  }
+
+  ul {
+    text-align: left;
+  }
+
+  .col-6 {
+    padding: 0 20px;
+  }
+
+  .form-label,
+  .label {
+    font-family: var(--default-font-family);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .contact-form {
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  .form-control {
+    background-color: #f2f2f2;
+    border-radius: revert;
+    height: 50px;
+    border: none;
+  }
+
+  #button-contact {
+    width: 150px;
+    background-color: #f2f2f2;
+    margin: 0 0 50px 0;
+  }
+
+  .socials {
+    font-size: 20px;
+    margin: 20px;
+    position: relative;
+    top: 5px;
+  }
+
+  .contact-socials {
+    display: block;
   }
 }
