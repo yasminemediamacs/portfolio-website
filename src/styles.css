@@ -286,6 +286,11 @@ form {
   padding-right: 50px;
 }
 
+#about-page,
+#work-page {
+  padding-bottom: 20px;
+}
+
 .form-label,
 .label {
   font-family: var(--default-font-family);
@@ -359,6 +364,15 @@ form {
   padding: 10px 20px;
   background-color: #e5bbb4;
   border: none;
+}
+
+.call-out-2 .btn-light:hover {
+  background-color: #fbeae9;
+  border: 2px solid #e5bbb4;
+}
+
+.container .contact-box {
+  padding-bottom: 40px;
 }
 
 /* Media queries Huge, Desktop, Tablet, Mobile and Small devices */
