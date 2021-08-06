@@ -295,6 +295,10 @@ img {
   margin: 100px 0;
 }
 
+.mobile-tablet-image {
+  display: none;
+}
+
 /* ----------- CSS Contact ----------- */
 form {
   padding-right: 50px;
@@ -553,6 +557,10 @@ form {
 
   .project-description {
     padding: 0 20px;
+  }
+
+  .mobile-tablet-image {
+    display: block;
   }
 
   .copyright {
