@@ -32,7 +32,9 @@
   <body class="about">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container" id="container-nav">
-        <a class="navbar-brand" href="/">Yasmine Senter</a>
+        <a class="navbar-brand" id="navbar-brand-home" href="/" title="Homepage"
+          >Yasmine Senter</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -48,18 +50,43 @@
           class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <ul class="navbar-nav" id="navbar-nav-home">
+            <li class="nav-item" id="nav-item-home">
+              <a
+                class="nav-link"
+                id="nav-link-home"
+                aria-current="page"
+                href="/"
+                title="Homepage"
+                >Home</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html">About Me</a>
+            <li class="nav-item" id="nav-item-home">
+              <a
+                class="nav-link active"
+                id="nav-link-home"
+                href="/about.html"
+                title="About Yasmine"
+                >About Me</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/work.html">My work</a>
+            <li class="nav-item" id="nav-item-home">
+              <a
+                class="nav-link"
+                id="nav-link-home"
+                href="/work.html"
+                title="Yasmine's work"
+                >My work</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact</a>
+            <li class="nav-item" id="nav-item-home">
+              <a
+                class="nav-link"
+                id="nav-link-home"
+                href="/contact.html"
+                title="Contact Yasmine"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -72,7 +99,11 @@
       </div>
       <div class="row mb-5">
         <div class="col-6 about-image">
-          <img src="/images/yasmine.jpg" alt="" class="img-fluid" />
+          <img
+            src="/images/yasmine.jpg"
+            alt="Photo of Yasmine"
+            class="img-fluid"
+          />
         </div>
         <div class="col-6 about-content">
           <div class="about-description">
@@ -104,32 +135,38 @@
             <p>Some Technologies that I've worked with:</p>
             <ul>
               <li class="technologies">
-                <img src="/images/html.png" alt="" />
+                <img src="/images/html.png" alt="HTML" />
               </li>
-              <li class="technologies"><img src="/images/css.png" alt="" /></li>
               <li class="technologies">
-                <img src="/images/bootstrap.png" alt="" />
+                <img src="/images/css.png" alt="CSS" />
               </li>
-              <li class="technologies"><img src="/images/js.png" alt="" /></li>
+              <li class="technologies">
+                <img src="/images/bootstrap.png" alt="Bootstrap" />
+              </li>
+              <li class="technologies">
+                <img src="/images/js.png" alt="JavaScript" />
+              </li>
               <!--<li class="technologies"><img src="/images/react.png" alt="" /></li>-->
               <li class="technologies">
-                <img src="/images/netlify.png" alt="" />
-              </li>
-              <li class="technologies"><img src="/images/api.png" alt="" /></li>
-              <li class="technologies">
-                <img src="/images/github.png" alt="" />
+                <img src="/images/netlify.png" alt="Netlify" />
               </li>
               <li class="technologies">
-                <img src="/images/sandbox.png" alt="" />
+                <img src="/images/api.png" alt="API" />
+              </li>
+              <li class="technologies">
+                <img src="/images/github.png" alt="Github" />
+              </li>
+              <li class="technologies">
+                <img src="/images/sandbox.png" alt="CodeSandbox" />
               </li>
             </ul>
-            <a href="/work.html"
+            <a href="/work.html" title="Yasmine's work"
               ><button class="btn btn-light button-about">
                 <i class="fas fa-mouse-pointer"></i> See the projects which I
                 created
               </button></a
             >
-            <a href="/contact.html"
+            <a href="/contact.html" class="Contact Yasmine"
               ><button class="btn btn-light button-about">
                 <i class="fas fa-mouse-pointer"></i> Contact me
               </button></a
@@ -208,21 +245,53 @@
             <p>Let's work together and make something creative</p>
           </div>
           <div class="call-out-button-box">
-            <a href="/contact.html" class="btn btn-light">Contact me</a>
+            <a
+              href="/contact.html"
+              class="btn btn-light"
+              title="Contact Yasmine"
+              >Contact me</a
+            >
           </div>
         </div>
       </div>
     </div>
     <footer>
       <h2 class="text-center mb-3">
-        <a href="mailto:yasminesenter6@gmail.com">yasminesenter6@gmail.com</a>
+        <a href="mailto:yasminesenter6@gmail.com" title="Yasmine's Email"
+          >yasminesenter6@gmail.com</a
+        >
       </h2>
       <div class="social-links d-flex justify-content-center">
-        <a href="" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a
+          href="https://github.com/yasminemediamacs"
+          target="_blank"
+          title="Yasmine's Github"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/senteryasmine/"
+          target="_blank"
+          title="Yasmine's Instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://twitter.com/yasmine_senter"
+          target="_blank"
+          title="Yasmine's Twitter"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/jasmine.senter.98"
+          target="_blank"
+          title="Yasmine's Facebook"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/yasmine-senter-9b159a210/"
+          target="_blank"
+          title="Yasmine's LinkedIn"
+          ><i class="fab fa-linkedin"></i
+        ></a>
       </div>
       <div>
         <p class="copyright text-center">

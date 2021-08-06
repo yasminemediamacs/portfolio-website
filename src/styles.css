@@ -56,6 +56,10 @@ a {
   line-height: 1.5;
 }
 
+a:hover {
+  color: var(--branding-color);
+}
+
 ul {
   text-align: center;
 }
@@ -589,11 +593,12 @@ form {
   }
 
   .copyright-contact {
-    text-align: center;
-    background-color: var(--branding-color);
     padding: 20px;
-    margin: 92px 0 0;
+    margin: 0;
     font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }
 
@@ -776,5 +781,17 @@ form {
   .copyright-contact {
     font-size: 12px;
     margin: 20px 0 0 0;
+    position: static;
+  }
+
+  footer .social-links a {
+    margin: 0 5px;
+    color: var(--branding-color);
+    background: var(--secondary-color);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 100ms ease-in-out;
+    margin-bottom: 10px;
   }
 }
