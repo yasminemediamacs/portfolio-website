@@ -5,67 +5,55 @@
   --default-font-family: "Poppins", sans-serif;
   --branding-color: #e5bbb4;
   --secondary-color: #fbeae9;
-}
-
-body {
-  font-family: var(--default-font-family);
+  --form-color: #f2f2f2;
 }
 
 h1,
-h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
   color: black;
   font-family: var(--heading-font-family);
-  font-weight: bold;
+  font-weight: 400;
+}
+
+h2,
+p,
+a {
+  color: black;
+  font-family: var(--default-font-family);
+  font-weight: 300;
 }
 
 h1 {
   font-size: 82px;
-  font-family: var(--heading-font-family);
-  font-weight: 400;
   margin-top: 150px;
 }
 
 h2 {
-  font-family: var(--default-font-family);
   font-weight: 200;
   line-height: 2;
   font-size: 28px;
 }
 
 h3 {
-  color: black;
   font-size: 32px;
-  font-family: var(--heading-font-family);
-  font-weight: 400;
   margin-bottom: 20px;
 }
 
 h4 {
-  color: black;
   font-size: 42px;
-  font-family: var(--heading-font-family);
-  font-weight: 400;
   margin-bottom: 20px;
 }
 
 p {
-  font-family: var(--default-font-family);
-  font-weight: 300;
   font-size: 20px;
   line-height: 1.5;
 }
 
 a {
   text-decoration: none;
-  font-family: var(--default-font-family);
-  font-weight: 300;
   font-size: 20px;
   line-height: 1.5;
-  color: black;
 }
 
 ul {
@@ -73,12 +61,12 @@ ul {
 }
 
 strong {
-  color: #e5bbb4;
+  color: var(--branding-color);
   font-weight: 400;
 }
 
 .call-out {
-  background-color: #fbeae9;
+  background-color: var(--secondary-color);
   padding: 30px 120px 20px;
   border-radius: 10px;
   margin-top: 50px;
@@ -93,9 +81,6 @@ strong {
   border: 2px solid var(--branding-color);
   border-radius: 5px;
   color: var(--secondary-color);
-  font-size: 17px;
-  font-weight: 300;
-  line-height: 30px;
   padding: 8px 20px;
   transition: all 200ms ease;
   position: relative;
@@ -112,12 +97,12 @@ strong {
 }
 
 .copyright {
-  text-align: center;
-  background-color: #e5bbb4;
+  background-color: var(--branding-color);
   padding: 20px;
   margin: 0;
   font-size: 18px;
 }
+
 /* ----------- CSS Navbar ----------- */
 
 .navbar-nav {
@@ -197,47 +182,12 @@ strong {
   bottom: 20px;
 }
 
-/* ----------- CSS Work ----------- */
-
-i {
-  margin: 0 8px;
-}
-
-img {
-  border-radius: 6px;
-}
-
-.container {
-  padding-bottom: 80px;
-}
-
-.heading {
-  margin: 0 0 50px 20px;
-}
-
-.btn-light {
-  font-family: var(--default-font-family);
-  font-weight: 300;
-  font-size: 18px;
-  margin: 5px 2px;
-}
-
-.copyright {
-  text-align: center;
-}
-
-.project-description {
-  padding: 20px 40px;
-}
-
-.row {
-  margin: 100px 0;
-}
-
 /* ----------- CSS About ----------- */
+
 ul {
   list-style-type: none;
   padding: 10px 0;
+  text-align: left;
 }
 
 li {
@@ -249,12 +199,16 @@ li img {
   padding-right: 10px;
 }
 
-.about-description {
-  padding: 40px;
+hr {
+  display: none;
 }
 
-#technology-icons {
-  text-align: left;
+#about-page {
+  padding-bottom: 20px;
+}
+
+.about-description {
+  padding: 50px 40px;
 }
 
 .button-about {
@@ -263,17 +217,13 @@ li img {
 }
 
 .about-skills {
-  border: 8px solid #e5bbb4;
-  border-radius: 4px;
+  border: 8px solid var(--branding-color);
+  border-radius: 8px;
   font-family: var(--default-font-family);
   font-weight: 300;
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
-}
-
-.row.skills {
-  margin: 0;
 }
 
 .container .skills-programs,
@@ -289,18 +239,46 @@ li img {
   margin: 50px 0;
 }
 
+/* ----------- CSS Work ----------- */
+
+#work-page {
+  padding-bottom: 20px;
+}
+
+i {
+  margin: 0 8px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.heading {
+  margin: 0 0 50px 20px;
+}
+
+.btn-light {
+  font-family: var(--default-font-family);
+  font-weight: 300;
+  font-size: 18px;
+  margin: 5px 2px;
+}
+
+.project-description {
+  padding: 20px 40px;
+}
+
+.work-structure {
+  margin: 100px 0;
+}
+
 /* ----------- CSS Contact ----------- */
 form {
   padding-right: 50px;
 }
 
-#contact-content {
-  margin: 10px;
-}
-
-#about-page,
-#work-page {
-  padding-bottom: 20px;
+.contact-heading {
+  margin: 50px 10px;
 }
 
 .form-label,
@@ -317,15 +295,15 @@ form {
 }
 
 .form-control {
-  background-color: #f2f2f2;
+  background-color: var(--form-color);
   border-radius: revert;
   height: 50px;
   border: none;
 }
 
-.button-contact {
+#button-contact {
   width: 150px;
-  background-color: #f2f2f2;
+  background-color: var(--form-color);
 }
 
 .socials {
@@ -347,12 +325,13 @@ form {
   opacity: 0.4;
   position: absolute;
   right: 50px;
-  bottom: 120px;
+  bottom: 50px;
   color: #c4dbd4;
 }
+
 .copyright-contact {
   text-align: center;
-  background-color: #e5bbb4;
+  background-color: var(--branding-color);
   padding: 20px;
   margin: 68px 0 0;
   font-size: 18px;
@@ -370,11 +349,36 @@ form {
   .project-description h3 {
     margin-bottom: 20px;
   }
+
+  .call-out {
+    padding: 30px 50px 20px;
+    margin: 0;
+  }
+
+  .call-out-button-box {
+    width: 182px;
+    top: 8px;
+    position: relative;
+  }
+
+  .call-out .btn-light {
+    position: relative;
+    top: 30px;
+  }
+
+  .call-out-content-box {
+    width: 420px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 768px) {
   /* Media queries General */
   h1 {
+    font-size: 78px;
     margin-top: 100px;
   }
 
@@ -384,12 +388,22 @@ form {
   }
 
   p {
-    font-size: 18px;
+    font-size: 15px;
+  }
+
+  .container .contact-box {
+    padding-bottom: 0;
   }
 
   .call-out {
     padding: 30px 50px 20px;
     margin: 35px;
+  }
+
+  .call-out .btn-light {
+    position: relative;
+    top: 25px;
+    width: 155px;
   }
 
   .call-out-button-box {
@@ -402,6 +416,12 @@ form {
     font-size: 12px;
   }
 
+  /* Media queries Navbar */
+
+  .navbar-nav {
+    padding-left: 30px;
+  }
+
   /* Media queries Homepage */
 
   .heading-home {
@@ -412,39 +432,53 @@ form {
     padding: 50px;
   }
 
-  .hero p {
-    font-size: 20px;
-  }
-
   .hero h2 {
-    font-size: 16px;
+    font-size: 24px;
+    line-height: 0;
   }
 
-  /* Media queries Work Page */
-  .heading {
-    margin: 0 0 50px 20px;
-  }
-
-  .copyright {
-    font-size: 14px;
-    margin: 20px 0 0 0;
+  .hero p {
+    font-size: 18px;
   }
 
   /* Media queries About */
+
   h2 {
     line-height: 1.4;
+    font-size: 20px;
   }
 
   h3 {
     margin-bottom: 20px;
   }
 
+  h4 {
+    font-size: 28px;
+  }
+
+  hr {
+    display: block;
+  }
+
+  .col-md-4 {
+    margin-bottom: 10px;
+  }
+
   .col-6 {
-    width: 100%;
+    padding-left: 28px;
+  }
+
+  .col-6 .about-image {
+    width: 40%;
+  }
+
+  .col-6 .about-content {
+    width: 60%;
+    padding: 0;
   }
 
   .about-description {
-    padding: 40px 20px;
+    padding: 10px 0;
   }
 
   .about-description p,
@@ -455,36 +489,78 @@ form {
   .technologies img {
     width: 10%;
     display: inline;
-    padding: 0 10px 20px 0;
   }
 
   .button-about {
-    margin: 10px;
+    font-size: 14px;
+    margin: 10px 0;
     text-align: start;
   }
 
+  .container .skills-programs {
+    font-size: 15px;
+  }
+
+  .skills-row {
+    margin: 0 20px;
+  }
+
+  .col-md-3 {
+    padding-bottom: 10px;
+  }
+
   .about-skills {
-    margin: 56px;
+    margin: 20px;
+  }
+  .certificates {
+    margin-bottom: 80px;
+  }
+
+  .certificate-img {
+    width: 50%;
+  }
+
+  /* Media queries Work Page */
+  .heading {
+    margin: 0 0 50px 20px;
+  }
+
+  .project-description {
+    padding: 0 20px;
+  }
+
+  .copyright {
+    font-size: 14px;
+    margin: 20px 0 0 0;
   }
 
   /* Media queries Contact */
 
   a {
-    font-size: 20px;
+    font-size: 16px;
   }
 
-  .col-6 {
+  .form-label,
+  .label {
+    font-family: var(--default-font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .contact-column {
     padding: 0 20px;
   }
 
   #button-contact {
     width: 150px;
-    background-color: #f2f2f2;
+    background-color: var(--form-color);
     margin: 0 0 50px 0;
+    font-size: 16px;
   }
 
   .socials {
-    font-size: 32px;
+    font-size: 28px;
     margin: 20px;
     position: relative;
     top: 5px;
@@ -497,6 +573,14 @@ form {
   .container {
     padding-bottom: 0;
   }
+
+  .copyright-contact {
+    text-align: center;
+    background-color: var(--branding-color);
+    padding: 20px;
+    margin: 92px 0 0;
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -507,7 +591,7 @@ form {
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   p,
@@ -518,26 +602,16 @@ form {
 
   h3,
   h4 {
-    font-size: 28px;
+    font-size: 26px;
     margin-bottom: 20px;
   }
 
   p {
-    font-size: 18px;
+    font-size: 15px;
   }
 
-  .call-out {
-    font-size: 24px;
-    padding: 40px;
-  }
-
-  .call-out h3 {
-    margin-bottom: 15px;
-    padding: 0 20px;
-  }
-
-  .call-out a {
-    font-size: 18px;
+  .heading {
+    margin: 0 0 50px 10px;
   }
 
   .copyright {
@@ -548,55 +622,19 @@ form {
 
   .heading-home {
     font-size: 42px;
+    line-height: 1.4;
   }
 
   .hero {
     padding: 40px;
   }
 
-  .hero p {
+  .hero h2 {
     font-size: 20px;
   }
 
-  .hero h2 {
+  .hero p {
     font-size: 16px;
-  }
-
-  /* Media queries Work Page */
-
-  .container {
-    padding: 0 20px;
-  }
-
-  .heading {
-    margin: 0 0 50px 20px;
-  }
-
-  .project-description {
-    padding: 0 20px;
-  }
-
-  .btn {
-    display: block;
-    margin: 50px auto 50px auto;
-  }
-
-  .call-out {
-    margin: 20px 0;
-    font-size: 24px;
-  }
-
-  .call-out h3 {
-    margin-bottom: 15px;
-  }
-
-  .call-out a {
-    font-size: 18px;
-  }
-
-  .copyright {
-    font-size: 12px;
-    margin: 20px 0 0 0;
   }
 
   /* Media queries About */
@@ -605,12 +643,21 @@ form {
     line-height: 1.4;
   }
 
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  #about-page {
+    padding-bottom: 0;
+  }
+
   .col-6 {
     width: 100%;
   }
 
   .about-description {
-    padding: 40px 0;
+    padding: 40px 0 0;
   }
 
   .about-description p,
@@ -618,15 +665,47 @@ form {
     text-align: start;
   }
 
+  .heading-skills {
+    padding: 0 10px;
+  }
+
   .technologies img {
-    width: 15%;
+    width: 11%;
     display: inline;
-    padding: 0 10px 20px 0;
+    padding: 10px 5px;
   }
 
   .button-about {
     margin: 10px 0;
     text-align: start;
+  }
+
+  .certificate-img {
+    width: 100%;
+  }
+
+  /* Media queries Work Page */
+
+  #work-page {
+    padding-bottom: 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .project-description {
+    padding: 0 20px;
+  }
+
+  .btn-work {
+    display: block;
+    margin: 20px auto;
+  }
+
+  .copyright {
+    font-size: 12px;
+    margin: 20px 0 0 0;
   }
 
   /* Media queries Contact */
@@ -657,7 +736,7 @@ form {
   }
 
   .form-control {
-    background-color: #f2f2f2;
+    background-color: var(--form-color);
     border-radius: revert;
     height: 50px;
     border: none;
@@ -665,7 +744,7 @@ form {
 
   #button-contact {
     width: 150px;
-    background-color: #f2f2f2;
+    background-color: var(--form-color);
     margin: 0 0 50px 0;
   }
 
@@ -678,5 +757,10 @@ form {
 
   .contact-socials {
     display: block;
+  }
+
+  .copyright-contact {
+    font-size: 12px;
+    margin: 20px 0 0 0;
   }
 }
