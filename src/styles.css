@@ -118,6 +118,14 @@ footer .social-links a {
   font-size: 15px;
 }
 
+.copyright-link {
+  font-size: 15px;
+}
+
+.copyright-link:hover {
+  color: white;
+}
+
 /* ----------- CSS Navbar ----------- */
 
 .navbar-nav {
@@ -349,7 +357,7 @@ form {
   background-color: var(--branding-color);
   padding: 20px;
   margin: 0;
-  font-size: 18px;
+  font-size: 15px;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -552,6 +560,14 @@ form {
     margin: 20px 0 0 0;
   }
 
+  .copyright-link {
+    font-size: 14px;
+  }
+
+  .copyright-link:hover {
+    color: white;
+  }
+
   /* Media queries Contact */
 
   a {
@@ -595,7 +611,7 @@ form {
   .copyright-contact {
     padding: 20px;
     margin: 0;
-    font-size: 18px;
+    font-size: 14px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -725,6 +741,14 @@ form {
   .copyright {
     font-size: 12px;
     margin: 20px 0 0 0;
+  }
+
+  .copyright-link {
+    font-size: 12px;
+  }
+
+  .copyright-link:hover {
+    color: white;
   }
 
   /* Media queries Contact */
