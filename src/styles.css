@@ -93,14 +93,25 @@ strong {
 }
 
 .container .contact-box {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+  margin-bottom: 50px;
 }
 
 .copyright {
   background-color: var(--branding-color);
-  padding: 20px;
+  padding: 18px;
   margin: 0;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 /* ----------- CSS Navbar ----------- */
